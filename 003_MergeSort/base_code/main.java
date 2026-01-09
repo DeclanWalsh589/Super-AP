@@ -36,3 +36,6 @@ class main {
 		}
 	}
 }
+class DayBirth(){
+	
+}

@@ -4,8 +4,12 @@ import java.io.*;
 
 class main {        // This should be all that is in your main.java file.
 	public static void main(String args[]) throws FileNotFoundException {
-        BBoard myBoard = new BBoard("Poole's Amazing BBoard");          // Feel free to change the name.
+
+	    Message mess = new Message("Declan", "D&D", "D&D is a great ttrpg and everyone should play", 0);
+	    mess.print(1);
+        BBoard myBoard = new BBoard("Poole's Amazing BBoard");   // Feel free to change the name.
         myBoard.loadUsers(args[0]);
+        myBoard.login();
         myBoard.run();
 
         // Feel free to add code for testing purposes. 
